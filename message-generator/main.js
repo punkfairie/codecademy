@@ -1,1 +1,2 @@
-/* old coots giving advice */
+/* Fortune Teller Bot */
+
