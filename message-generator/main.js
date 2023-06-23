@@ -20,7 +20,7 @@ const part2 = [
   'but it will turn out perfectly in the end!',
 ]
 
-const part3 = 'Your lucky number is '
+const part3 = ' Your lucky number is '
 
 const buildMsg = function () {
   let msg = ''
