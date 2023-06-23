@@ -21,3 +21,15 @@ const part2 = [
 ]
 
 const part3 = 'Your lucky number is '
+
+const buildMsg = function () {
+  let msg = ''
+
+  msg += part1[Math.floor(Math.random() * part1.length)]
+  msg += part2[Math.floor(Math.random() * part2.length)]
+
+  const luckyNum = Math.floor(Math.random() * 100) + 1
+  msg += part3 + luckyNum + '.'
+
+  return msg
+}
