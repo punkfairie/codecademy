@@ -33,3 +33,5 @@ const buildMsg = function () {
 
   return msg
 }
+
+console.log(buildMsg())
