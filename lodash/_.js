@@ -21,5 +21,9 @@ _.inRange = function (num, start, end) {
   return start <= num && num < end
 }
 
+/* --------------------------------------------------------------- words ---- */
+
+_.words = (string) => string.split(' ')
+
 // Do not write or modify code below this line.
 module.exports = _
