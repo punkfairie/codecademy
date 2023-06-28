@@ -78,5 +78,18 @@ _.dropWhile = function (arr, cb) {
   return this.drop(arr, dropTo)
 }
 
+/* --------------------------------------------------------------- chunk ---- */
+
+_.chunk = function (arr, size = 1) {
+  const res = []
+
+  for (let i = 0; i < arr.length; i += size) {
+    res.push(arr.slice(i, i + size))
+    console.log(res)
+  }
+
+  return res
+}
+
 // Do not write or modify code below this line.
 module.exports = _
