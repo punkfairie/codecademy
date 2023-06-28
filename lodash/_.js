@@ -66,5 +66,9 @@ _.findKey = function (obj, cb) {
   return undefined
 }
 
+/* ---------------------------------------------------------------- drop ---- */
+
+_.drop = (arr, num = 1) => arr.slice(num)
+
 // Do not write or modify code below this line.
 module.exports = _
