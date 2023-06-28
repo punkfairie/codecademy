@@ -1,4 +1,4 @@
-let _ = {}
+const _ = {}
 
 /* --------------------------------------------------------------- clamp ---- */
 
@@ -13,7 +13,7 @@ _.inRange = function (num, start, end) {
   }
 
   if (start > end) {
-    let s = start
+    const s = start
     start = end
     end = s
   }
@@ -24,6 +24,19 @@ _.inRange = function (num, start, end) {
 /* --------------------------------------------------------------- words ---- */
 
 _.words = (string) => string.split(' ')
+
+/* ----------------------------------------------------------------- pad ---- */
+
+_.pad = function (string, length) {
+  if (string.length >= length) {
+    return string
+  }
+
+  const addToStart = Math.floor((length - string.length) / 2)
+  const addToEnd = length - string.length - addToStart
+
+  return ' '.repeat(addToStart) + string + ' '.repeat(addToEnd)
+}
 
 // Do not write or modify code below this line.
 module.exports = _
