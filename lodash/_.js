@@ -54,5 +54,17 @@ _.invert = function (obj) {
   return newObj
 }
 
+/* ------------------------------------------------------------- findKey ---- */
+
+_.findKey = function (obj, cb) {
+  for (const key in obj) {
+    if (cb(obj[key])) {
+      return key
+    }
+  }
+
+  return undefined
+}
+
 // Do not write or modify code below this line.
 module.exports = _
