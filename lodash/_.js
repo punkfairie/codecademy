@@ -40,8 +40,18 @@ _.pad = function (string, length) {
 
 /* ----------------------------------------------------------------- has ---- */
 
-_.has = function (obj, key) {
-  return !!obj[key]
+_.has = (obj, key) => !!obj[key]
+
+/* -------------------------------------------------------------- invert ---- */
+
+_.invert = function (obj) {
+  const newObj = {}
+
+  for (const key in obj) {
+    newObj[obj[key]] = key
+  }
+
+  return newObj
 }
 
 // Do not write or modify code below this line.
