@@ -70,5 +70,13 @@ _.findKey = function (obj, cb) {
 
 _.drop = (arr, num = 1) => arr.slice(num)
 
+/* ----------------------------------------------------------- dropWhile ---- */
+
+_.dropWhile = function (arr, cb) {
+  const dropTo = arr.findIndex((e, i) => !cb(e, i, arr))
+
+  return this.drop(arr, dropTo)
+}
+
 // Do not write or modify code below this line.
 module.exports = _
